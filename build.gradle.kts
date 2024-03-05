@@ -58,7 +58,7 @@ tasks {
 
 repositories {
     mavenCentral()
-    mavenLocal())
+    mavenLocal()
     maven {
         url = uri("https://maven.pkg.github.com/openhtmltopdf/openhtmltopdf")
         credentials {
