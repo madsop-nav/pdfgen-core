@@ -61,6 +61,10 @@ repositories {
     mavenLocal()
     maven {
         url = uri("https://maven.pkg.github.com/navikt/maven-release")
+        credentials {
+            username = "token"
+            password = System.getenv("GITHUB_TOKEN")
+        }
     }
 }
 
