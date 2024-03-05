@@ -58,7 +58,14 @@ tasks {
 
 repositories {
     mavenCentral()
-    mavenLocal()
+    mavenLocal())
+    maven {
+        url = uri("https://maven.pkg.github.com/openhtmltopdf/openhtmltopdf")
+        credentials {
+            username = "token"
+            password = System.getenv("GITHUB_TOKEN")
+        }
+    }
     maven {
         url = uri("https://maven.pkg.github.com/navikt/maven-release")
         credentials {
